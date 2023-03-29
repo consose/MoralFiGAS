@@ -92,23 +92,23 @@ POLARITY RESULTS:
 
 
 
-## Citation:
+## Citations:
 
 If you use this package, we encourage you to add the following references to the related papers:
 
 <!-- ## References: -->
 
-  - Barbaglia L., Consoli S., Manzan S. (2021).
-    Fine-grained, aspect-based sentiment analysis on economic and financial lexicon. Available at arXiv:
-    
-  - Barbaglia L., Consoli S., Manzan S. (September 23, 2020).
-    Forecasting with Economic News. Available at SSRN:
-    <https://ssrn.com/abstract=3698121>
+- Araque, O.; Gatti, L.; and Kalimeri, K. 2020. MoralStrength: Exploiting a moral lexicon and embedding similarity for moral foundations prediction. Knowledge-Based Systems, 191
+ 
+-Araque, O.; Gatti, L.; and Kalimeri, K. 2022. LibertyMFD: A Lexicon to Assess the Moral Foundation of Liberty. In ACM International Conference Proceeding Series, 154 – 160
 
-  - Barbaglia L., Consoli S., Manzan S. (2020). Monitoring the Business
-    Cycle with Fine-Grained, Aspect-Based Sentiment Extraction from
-    News. In: Bitetta V., Bordino I., Ferretti A., Gullo F., Pascolutti
-    S., Ponti G. (eds) Mining Data for Financial Applications. MIDAS
-    2019. Lecture Notes in Computer Science, vol 11985. Springer.
+ - Barbaglia, L.; Consoli, S.; and Manzan, S. 2022. Forecasting with Economic News. Journal of Business and Economic Statistics, to appear. Available at SSRN: <https://ssrn.com/abstract=3698121>
+
+- Consoli, S.; Barbaglia, L.; and Manzan, S. 2020. Fine-grained, aspect-based semantic sentiment analysis within the economic and financial domains. In Proceedings - 2020 IEEE 2nd International Conference on Cognitive Machine Intelligence, CogMI 2020, 52 – 61
+
+- Consoli, S.; Barbaglia, L.; and Manzan, S. 2021. Explaining sentiment from Lexicon. In CEUR Workshop Proceedings, volume 2918, 87 – 95
+
+- Consoli, S.; Barbaglia, L.; and Manzan, S. 2022. Fine-grained, aspect-based sentiment analysis on economic and financial lexicon. Knowledge-Based Systems, 247: 108781
+
 
 
