@@ -41,7 +41,7 @@ def lemmatize_doc_IE_Sentiment(doc,singleNOUNs,singleCompoundedHITS,singleCompou
     return vect, vect_sentiment, vect_spans, vect_text, vect_tense
 
 
-def get_polarity_standalone(text, include, exclude=None, location=None, tense=['past', 'present', 'future', 'NaN'], oss=False, UseSenticNet=True, UseSentiWordNet=True, UseFigas=True, UseHarvard=False, UseLMD=False, UseLiberty=False, UseAuthority=False, UseCare=False, UseFairness=False, UseLoyalty=False, UsePurity=False):
+def get_polarity_standalone(text, include, exclude=None, location=None, tense=['past', 'present', 'future', 'NaN'], oss=False, UseSenticNet=False, UseSentiWordNet=False, UseFigas=False, UseHarvard=False, UseLMD=False, UseLiberty=False, UseAuthority=False, UseCare=False, UseFairness=False, UseLoyalty=False, UsePurity=False):
     # text = ['Today is a beautiful day', 'The economy is slowing down and it is a rainy day']
     # include = ['day', 'economy']
     # exclude=None 
@@ -121,20 +121,20 @@ def get_polarity_standalone(text, include, exclude=None, location=None, tense=['
 print("\nSTART RUN\n")
 
 #text = ['Unemployment is rising at high speed', 'The economy is slowing down and unemployment is booming']
-text = ['This is what the unemployment suggests', 'The country has an heretic economy', 'The economy brings damages to the country', 'Unemployment carries discrimination with large disproportion in the current society', "The economy is deceiving and the country risks to be abandoned"]
+text = ['The country has restricting personal regulations']
 
-include = ['unemployment', 'economy']
+include = ['country']
 
 oss=False
 
-UseFigas=True #False #True
-UseSenticNet=True #False #True
+UseFigas=False #False #True
+UseSenticNet=False #False #True
 UseSentiWordNet=False #False #True
 
 UseHarvard=False  #False #True
 UseLMD=False  #False #True
 
-UseLiberty = True #False #True
+UseLiberty = False #False #True
 UseAuthority = False #False #True
 UseCare = False #False #True
 UseFairness = False #False #True
@@ -167,7 +167,9 @@ elif ((UseLiberty == True) or (UseAuthority == True) or (UseCare == True) or (Us
 
 ############
 
-resp = get_polarity_standalone(text = text, include = include, oss=oss, UseSenticNet=UseSenticNet, UseSentiWordNet=UseSentiWordNet, UseFigas=UseFigas, UseHarvard=UseHarvard, UseLMD=UseLMD, UseLiberty=UseLiberty, UseAuthority=UseAuthority, UseCare=UseCare, UseFairness=UseFairness, UseLoyalty=UseLoyalty, UsePurity=UsePurity)
+#resp = get_polarity_standalone(text = text, include = include, oss=oss, UseSenticNet=UseSenticNet, UseSentiWordNet=UseSentiWordNet, UseFigas=UseFigas, UseHarvard=UseHarvard, UseLMD=UseLMD, UseLiberty=UseLiberty, UseAuthority=UseAuthority, UseCare=UseCare, UseFairness=UseFairness, UseLoyalty=UseLoyalty, UsePurity=UsePurity)
+
+resp = get_polarity_standalone(text = text, include = include, oss=oss, UseLiberty=True)
 
 print("\nPOLARITY RESULTS:\n\n")
 for res in resp.values:
