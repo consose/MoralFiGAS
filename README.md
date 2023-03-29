@@ -86,7 +86,7 @@ getting in output:
 ``` bash
 POLARITY RESULTS:
 
-['The country has restricting personal regulations'] --> ---country---+++___restrict______regulation___personal --> -0.806889035759602 ['present']
+['The country has restricting personal regulations'] --> ---country---+++___restrict______regulation___personal --> -0.81 ['present']
 ```
 
 
